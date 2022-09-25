@@ -1,0 +1,117 @@
+            /* основной цвет
+             текст
+            #2196F3  - голубой
+            #212121  - черный
+            #757575  - серый
+            #FFFFFF  - белый
+            rgba(255, 255, 255, 0.6)  - белый 1
+              фон
+            #FFFFFF  - белый
+            #F5F5F5  - белый 1
+            #F5F4FA  - белый 2
+            #2196F3 - голубой
+            #2F303A  - черный
+            */
+
+body {
+    color: #757575;
+    background-color: #FFFFFF;
+}
+
+/* section , list(<ul>) */
+.section_title,
+.list_title {
+    color: #212121;
+}
+
+.item {
+    list-style: none;
+}
+
+/* header */
+.logo {
+    color: #2196F3;
+}
+
+.logo span{
+    color: #000000;
+}
+
+.item {
+    list-style: none;
+}
+
+.header-nav .link {
+    color: #212121;
+}
+
+.header-nav .link:hover,
+.header-nav .link:focus {
+    color: #2196F3;
+}
+
+.header-connect .item {
+    list-style: none;
+}
+.header-connect .link {
+    color: #212121;
+}
+
+.header-connect .link:hover,
+.header-connect .link:focus {
+    color: #2196F3;
+}
+
+/* bacic */
+.basic {
+    background-color: #2F303A;
+}
+
+.basic .section_title {
+    color: #FFFFFF;
+}
+
+.basic_btn {
+    background-color: #2196F3;
+}
+
+/* prioritie */
+.prioritie {
+    background-color: #F5F5F5;
+}
+
+/* service */
+.service {
+    background-color: #F5F5F5;
+}
+
+/* team */
+.team {
+    background-color: #F5F4FA;
+}
+
+.team-list .item {
+    background-color: #FFFFFF;
+}
+
+/* footer */
+.footer {
+    background-color: #2F303A;
+}
+
+.footer span,
+.footer-list_map {
+    color: #FFFFFF;
+}
+
+.footer-list .link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list .footer-list_map:hover,
+.footer-list .footer-list_map:focus,
+.footer-list .link:hover,
+.footer-list .link:focus {
+    color: #2196F3;
+}
+
