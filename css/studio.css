@@ -1,0 +1,40 @@
+        /* Стили для STUDIO */
+
+/* basic */
+.basic {
+    background-color: var(--backgr-black);
+}
+
+.basic .title {
+    color: var(--text-backgr-white);
+}
+
+.basic_btn {
+    background-color: var(--a-hover-focus-btn);
+    color: var(--text-backgr-white);
+}
+
+.basic_btn:hover,
+.basic_btn:focus {
+    background-color: var(--text-backgr-white);
+    color: var(--a-hover-focus-btn);
+}
+
+/* prioritie */
+.prioritie {
+    background-color: var(--backgr-prior-service);
+}
+
+/* service */
+.service {
+    background-color: var(--backgr-prior-service);
+}
+
+/* team */
+.team {
+    background-color: var(--backgr-team);
+}
+
+.team-list .item {
+    background-color: var(--text-backgr-white);
+}
