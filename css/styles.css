@@ -14,14 +14,24 @@
 
 body {
     color: var(--text);
-    background-color: var(--text-backgr-white);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
 }
 
-/* базовые настройки 
-заголовки<h..> (title), списки<li>(item), ссылки<a>(link) */
-.title,
+/* ОБЩИЕ:  заголовки<h..> (.title), списки<li>(.item), ссылка<a> */
+.title {
+    color: var(--title);
+}
+
+.item {
+    list-style: none;
+}
+
 .link {
     color: var(--title);
+    text-decoration: none;
 }
 
 .link:hover,
@@ -29,20 +39,30 @@ body {
     color: var(--a-hover-focus-btn);
 }
 
-.item {
-    list-style: none;
+/* header */
+.header {
+    background-color: var(--text-backgr-white);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
 }
 
-/* header */
 .logo {
     color: var(--a-hover-focus-btn);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
 }
 
 .logo span{
     color: var(--black);
 }
 
-.header-nav .link.current {
+
+.link.current {
     color: var(--a-hover-focus-btn);
 }
 
@@ -56,15 +76,8 @@ body {
     color: var(--text-backgr-white);
 }
 
-.footer-list .link {
+.footer-list_link {
     color: var(--text-gray);
-}
-
-.footer-list_map:hover,
-.footer-list_map:focus,
-.footer-list .link:hover,
-.footer-list .link:focus {
-    color: var(--a-hover-focus-btn);
 }
 
 
