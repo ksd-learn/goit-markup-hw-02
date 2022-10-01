@@ -3,7 +3,8 @@
 :root {
     --title: #212121;
     --text: #757575;
-    --a-hover-focus-btn: #2196F3;
+    --a-hover-focus--btn: #2196F3;
+    --btn-hover-focus: #188CE8;
     --text-backgr-white: #FFFFFF;
     --text-gray: rgba(255, 255, 255, 0.6);
     --backgr-black: #2F303A;
@@ -14,10 +15,25 @@
 
 body {
     color: var(--text);
+    background-color: var(--text-backgr-white);
     font-family: Roboto, sans-serif;
     font-size: 14px;
     line-height: 1.8;
     letter-spacing: 0.03em;
+}
+
+/* класс для сокрытия элемента (блока) */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 /* ОБЩИЕ:  заголовки<h..> (.title), списки<li>(.item), ссылка<a> */
@@ -36,12 +52,11 @@ body {
 
 .link:hover,
 .link:focus {
-    color: var(--a-hover-focus-btn);
+    color: var(--a-hover-focus--btn);
 }
 
 /* header */
 .header {
-    background-color: var(--text-backgr-white);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -49,7 +64,7 @@ body {
 }
 
 .logo {
-    color: var(--a-hover-focus-btn);
+    color: var(--a-hover-focus--btn);
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -63,7 +78,11 @@ body {
 
 
 .link.current {
-    color: var(--a-hover-focus-btn);
+    color: var(--a-hover-focus--btn);
+}
+
+.header-connect_color {
+    color: var(--text);
 }
 
 /* footer */
@@ -76,8 +95,10 @@ body {
     color: var(--text-backgr-white);
 }
 
-.footer-list_link {
+.footer-list_color {
     color: var(--text-gray);
 }
 
-
+.footer-list {
+    font-style: normal;
+}

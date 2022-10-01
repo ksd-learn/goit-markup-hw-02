@@ -1,10 +1,6 @@
 /* Стили для <main> PORTFOLIO */
 
-.portfolio {
-    background-color: var(---backgr-prior-service);
-}
-
-.portfolio-filter_btn {
+.portfolio-filter__btn {
     background-color: var(--backgr-team);
     color: var(--title);
     font-family: inherit;
@@ -15,9 +11,9 @@
     cursor: pointer;
 }
 
-.portfolio-filter_btn:hover,
-.portfolio-filter_btn:focus {
-    background-color: var(--a-hover-focus-btn);
+.portfolio-filter__btn:hover,
+.portfolio-filter__btn:focus {
+    background-color: var(--a-hover-focus--btn);
     color: var(--text-backgr-white);
 }    
 
@@ -28,7 +24,7 @@
     text-decoration: none;
 }
 
-.project_title {
+.project__title {
     color: var(--title);
     font-weight: 700;
     font-size: 18px;
